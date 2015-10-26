@@ -23,6 +23,8 @@ console.log(fib(8));
 console.log(fib(9));
 console.log(fib(10));
 
+
+// Function for Fibonacci numbers
 function fib(x) {
 	if (x === 0 ){
 		return x;
@@ -33,6 +35,7 @@ function fib(x) {
 	}
 };
 
+// Function for Calculating Factorals
 function fact(x) {
 	if (x === 0){
 		return 1;

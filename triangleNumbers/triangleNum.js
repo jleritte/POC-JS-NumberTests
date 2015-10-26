@@ -1,3 +1,4 @@
+// Function for calculating Triangle Numebrs
 function mul() { 
 	var b = ""; 
 	var c = parseInt(txt.value); 
