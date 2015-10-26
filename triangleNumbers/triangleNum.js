@@ -1,13 +1,19 @@
 // Function for calculating Triangle Numebrs
-function mul() { 
+function mul(x) { 
+	return (x * (x + 1) / 2);
+}
+
+
+
+function showTri(argument) {
 	var b = ""; 
 	var c = parseInt(txt.value); 
-	for(var a=1; a<=c; a++) { 
-			for(var d=1; d<=a; d++) { 
-			b +="&utrif;" ; 
-		} 
-		b += "" + "<br>"; 
+	for(var a=1; a<=c; a++) {
+		b += "<div class='tri'>"; 
+		for(var d=1; d<=a; d++) { 
+			b += "&utrif; "; 
+		}
+		b += "</div>";
 	} 
-	box.innerHTML= "<br>"+ "<br>"+c + "  triangular number =   " +  (c*(c+1)/2) + "<br>" + "<br>"+b ; 
-	  
+	box.innerHTML= "<br>"+ "<br>"+c + "  triangular number =   " +  mul(c) + "<br>" + "<div class='contain'>" + b + "</div>"; 
 }

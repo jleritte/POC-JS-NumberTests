@@ -1,12 +1,21 @@
 <html>
 	<head>
 		<title>Triangle Numbers</title>
-		<script src="triangleNum.js"></script> 
+		<script src="triangleNum.js"></script>
+		<style>
+			.contain {
+				display:flex;
+				flex-direction: column;
+			}
+			.tri {
+				align-self: center;
+			}
+		</style>
 	</head>
 	<body>
 		<h1>Triangular Numbers</h1> 
 		<input type="text" id="txt" value= 2> 
-		<input type = "button" value="triangular number" onclick="mul()"> 
+		<input type = "button" value="triangular number" onclick="showTri()"> 
 		<span id="box" style="font-size:20; color:blue"></span> 
 	</body> 
 </html>
