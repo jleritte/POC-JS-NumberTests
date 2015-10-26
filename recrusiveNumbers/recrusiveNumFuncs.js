@@ -10,13 +10,6 @@ console.log(fact(8));
 console.log(fact(9));
 console.log(fact(10));
 
-function fact(x) {
-	if (x === 0){
-		return 1;
-	} else {
-		return x * fact(x - 1);
-	}
-}
 
 console.log(fib(0));
 console.log(fib(1));
@@ -38,4 +31,12 @@ function fib(x) {
 	} else {
 		return fib(x - 1) + fib(x - 2);
 	}
-}
+};
+
+function fact(x) {
+	if (x === 0){
+		return 1;
+	} else {
+		return x * fact(x - 1);
+	}
+};
