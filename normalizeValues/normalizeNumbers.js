@@ -49,6 +49,8 @@ console.log("Call with test array [1,2,3,4,5,6,7,8,9,10].");
 console.log(normal(test,1,10,2));
 console.log("Test to make sure normalization is good.");
 console.log(normal(test3,1,10,3));
+console.log("Test single element");
+console.log(normal([4],1,10))
 console.log("Return if bad array");
 console.log(normal(null,1,10,2));
 console.log(normal([],1,10,2));
